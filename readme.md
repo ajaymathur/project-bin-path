@@ -31,7 +31,7 @@ Project structure:
 
 ```javascript
 // foo.js
-const projectBinPath = require('project-bin-path)
+const projectBinPath = require('project-bin-path')
 
 projectBinPath(__dirname).then(binPath => {
     console.log(binPath);
