@@ -19,14 +19,14 @@ Usage:
 Project structure:
 
 ```
-    +Users
-        +ajaynarainmathur
-            +test-project
-                +node_modules
-                    +.bin
-                +package.json
-                +dist
-                    +foo.js
++Users/
+    +ajaynarainmathur/
+        +test-project/
+            +node_modules/
+                +.bin/
+            +package.json
+            +dist/
+                +foo.js
 ```
 
 ```javascript
