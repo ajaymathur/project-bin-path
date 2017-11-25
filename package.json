@@ -1,0 +1,24 @@
+{
+  "name": "project-bin",
+  "version": "0.0.0",
+  "description": "This will give path to the project's local bin",
+  "main": "index.js",
+  "author": {
+    "name": "Ajay Narain Mathur",
+    "email": "ajaynarainmathur@gmail.com"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "pkg-dir": "^2.0.0"
+  },
+  "devDependencies": {
+    "ava": "^0.23.0",
+    "xo": "^0.18.2"
+  }
+}
