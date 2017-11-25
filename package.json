@@ -1,5 +1,5 @@
 {
-  "name": "project-bin",
+  "name": "project-bin-path",
   "version": "0.0.0",
   "description": "This will give path to the project's local bin",
   "main": "index.js",
