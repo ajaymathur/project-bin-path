@@ -16,7 +16,7 @@ or
 
 ### Usage:
 
-Project structure:
+Project structure
 
 ```
 +Users/
@@ -39,13 +39,13 @@ projectBinPath(__dirname).then(binPath => {
 });
 ```
 
-### Api:
+### Api
 
 `projectBinPath([cwd])`
 
 => Returns a promise of path to `.bin` folder of the project or `null` if project is not found
 
-### projectBinPath.sync([cwd])
+`projectBinPath.sync([cwd])`
 
 => Returns the path to `.bin` of the project or `null`.
 
@@ -55,3 +55,13 @@ projectBinPath(__dirname).then(binPath => {
 
 Type: `string`<br />
 Default: `process.cwd()`
+
+### Use Cases
+
+1. When you need to get path to excutables in package ( ***not the project but of your local package*** ) just do `projectBinPath(__dirname)` => `[...]/project/node_modules/your_package/node_modules/.bin`
+
+2. When you need to get path to excutables in project ( **project using you package*** ) just do `projectBinPath()` => `[...]/project/node_modules/.bin`
+
+### License
+
+MIT
