@@ -1,4 +1,4 @@
-### project-bin-path 
+## project-bin-path 
 
 ![build description](https://travis-ci.org/ajaymathur/project-bin-path.svg?branch=master)
 
@@ -6,7 +6,7 @@
 
 ***Inspired by [sindresorhus/pkg-dir](https://github.com/sindresorhus/pkg-dir)***
 
-Install:
+### Install:
 
 `npm install project-bin-path`
 
@@ -14,7 +14,7 @@ or
 
 `yarn add project-bin-path`
 
-Usage:
+### Usage:
 
 Project structure:
 
@@ -38,3 +38,20 @@ projectBinPath(__dirname).then(binPath => {
     // `/Users/ajaynarainmathur/test-project/node_modules/.bin`
 });
 ```
+
+### Api:
+
+`projectBinPath([cwd])`
+
+=> Returns a promise of path to `.bin` folder of the project or `null` if project is not found
+
+### projectBinPath.sync([cwd])
+
+=> Returns the path to `.bin` of the project or `null`.
+
+#### cwd
+
+=> Directory to start from.
+
+Type: `string`<br />
+Default: `process.cwd()`
