@@ -1,1 +1,3 @@
 node_modules
+#Ignore any and all lock files
+*lock*
