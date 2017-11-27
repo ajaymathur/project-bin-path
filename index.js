@@ -1,10 +1,13 @@
 'use strict';
 const path = require('path');
-const pkgDir = require('pkg-dir');
+const findUp = require('find-up');
 
-module.exports = cwd => pkgDir(cwd).then(project => project ? path.resolve(project, 'node_modules', '.bin') : null);
+module.exports = async cwd => {
+  const filePath = await findUp('package.json', {cwd});
+  return filePath && path.join(path.dirname(filePath), 'node_modules', '.bin');
+};
 
 module.exports.sync = cwd => {
-  const project = pkgDir.sync(cwd);
-  return project ? path.resolve(project, 'node_modules', '.bin') : null;
+  const filePath = findUp.sync('package.json', {cwd});
+  return filePath && path.join(path.dirname(filePath), 'node_modules', '.bin');
 };
