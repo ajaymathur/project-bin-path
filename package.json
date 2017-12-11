@@ -7,6 +7,15 @@
     "name": "Ajay Narain Mathur",
     "email": "ajaynarainmathur@gmail.com"
   },
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/ajaymathur/project-bin-path.git"
+  },
+  "keywords": [
+    "path",
+    "bin",
+    "node_modules"
+  ],
   "scripts": {
     "test": "xo && ava"
   },

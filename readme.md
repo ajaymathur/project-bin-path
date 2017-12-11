@@ -1,4 +1,4 @@
-## project-bin-path 
+## project-bin-path
 
 ![build description](https://travis-ci.org/ajaymathur/project-bin-path.svg?branch=master)
 
@@ -10,7 +10,7 @@
 
 `npm install project-bin-path`
 
-or 
+or
 
 `yarn add project-bin-path`
 
@@ -18,15 +18,15 @@ or
 
 Project structure
 
-```
-+Users/
-    +ajaynarainmathur/
-        +test-project/
-            +node_modules/
-                +.bin/
-            +package.json
-            +dist/
-                +foo.js
+```text
+📁 Users/
+  📁 ajaynarainmathur/
+      📁 test-project/
+          📁 node_modules/
+              📃 .bin/
+          📃 package.json
+              📁 dist/
+                  📃 foo.js
 ```
 
 ```javascript
