@@ -23,7 +23,7 @@ Project structure
   📁 ajaynarainmathur/
       📁 test-project/
           📁 node_modules/
-              📃 .bin/
+              📁 .bin/
           📃 package.json
               📁 dist/
                   📃 foo.js
@@ -43,15 +43,15 @@ projectBinPath(__dirname).then(binPath => {
 
 `projectBinPath([cwd])`
 
-=> Returns a promise of path to `.bin` folder of the project or `null` if project is not found
+⮑ Returns a promise of path to `.bin` folder of the project or `null` if project is not found
 
 `projectBinPath.sync([cwd])`
 
-=> Returns the path to `.bin` of the project or `null`.
+⮑ Returns the path to `.bin` of the project or `null`.
 
 #### cwd
 
-=> Directory to start from.
+⮑ Directory to start from.
 
 Type: `string`<br />
 Default: `process.cwd()`
@@ -64,4 +64,4 @@ Default: `process.cwd()`
 
 ### License
 
-MIT
+MIT 🍻 [Ajay Narain Mathur](https://github.com/ajaymathur)
