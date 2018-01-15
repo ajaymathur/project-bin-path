@@ -14,7 +14,9 @@
   "keywords": [
     "path",
     "bin",
-    "node_modules"
+    "node_modules",
+    "package",
+    "script"
   ],
   "scripts": {
     "test": "xo && ava"

@@ -1,10 +1,12 @@
 'use strict';
+const path = require('path');
+const findUp = require('find-up');
 
-const ver = process.versions.node;
-const majorVer = parseInt(ver.split('.')[0], 10);
+module.exports = cwd =>
+  findUp('package.json', {cwd})
+    .then(filePath => filePath ? path.resolve(path.dirname(filePath), 'node_modules', '.bin') : null);
 
-if (majorVer < 8) {
-  module.exports = require('./src/legacy');
-} else {
-  module.exports = require('./src/modern');
-}
+module.exports.sync = cwd => {
+  const filePath = findUp.sync('package.json', {cwd});
+  return filePath ? path.resolve(path.dirname(filePath), 'node_modules', '.bin') : null;
+};
