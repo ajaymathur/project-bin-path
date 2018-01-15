@@ -1,15 +1,15 @@
 {
   "name": "project-bin-path",
-  "version": "1.1.1",
+  "version": "2.0.0",
   "description": "This will give path to the project's local bin",
   "main": "index.js",
   "author": {
     "name": "Ajay Narain Mathur",
     "email": "ajaynarainmathur@gmail.com"
   },
-  "repository" : {
-    "type" : "git",
-    "url" : "https://github.com/ajaymathur/project-bin-path.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ajaymathur/project-bin-path.git"
   },
   "keywords": [
     "path",
